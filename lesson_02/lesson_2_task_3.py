@@ -3,7 +3,7 @@ import math
 
 def square(x):
     s = x*x
-    return(s)
+    return (s)
 
 
 x = float(input())
