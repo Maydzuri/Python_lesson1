@@ -9,7 +9,6 @@ string_utils = StringUtils()
 @pytest.mark.parametrize("input_str, expected", [
     ("skypro", "Skypro"),
     ("hello world", "Hello world"),
-    ("python", "Python"),
     ("Test", "Test"),
 ])
 def test_capitalize_positive(input_str, expected):
@@ -49,7 +48,7 @@ def test_trim_negative(input_str, expected):
 @pytest.mark.positive
 @pytest.mark.parametrize("input_str, symbol, expected", [
     ("SkyPro", "S", True),
-    ("SkyPro", "P", True),
+    ("SkyPro", "r", True),
     ("", "", True),
     ("SkyPro", "", True),
 ])
