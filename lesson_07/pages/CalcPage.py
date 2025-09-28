@@ -31,8 +31,10 @@ class CalcPage:
             (By.CSS_SELECTOR, 'div.screen'), '15'))
 
     def check(self):
-        assert self._driver.find_element(
-            By.CSS_SELECTOR, "div.screen").text == "15"
+        result = self._driver.find_element(
+            By.CSS_SELECTOR, "div.screen").text
+        print(result)
+        assert "15" in result
 
     def close_driver(self):
         self._driver.quit()

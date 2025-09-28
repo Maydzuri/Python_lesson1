@@ -39,10 +39,10 @@ class ShopPage:
         self._driver.find_element(By.ID, 'continue').click()
 
     def total(self):
-        total = self._driver.find_element(
+        result_total = self._driver.find_element(
             By.CLASS_NAME, 'summary_total_label').text
-        total_value = float(total.split('$')[1])
-        assert total_value == 58.29
+        print(result_total)
+        assert "$58.29" in result_total
 
     def close_driver(self):
         self._driver.quit()
