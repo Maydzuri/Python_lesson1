@@ -1,0 +1,15 @@
+LOGIN = "maydzuri@gmail.com"
+PASSWORD = "Element_10"
+NAME = "Тестировщик"
+COMPANY_ID = "19b59799-8536-4047-9ec0-c2eba1c2a50d"
+USER_UUID = "050ba0f9-841c-4b84-8fbe-7b96803a4320"
+ADMIN_ROLE = "admin"
+NEW_TITLE = "New_Project_Test"
+TEST_USER = {USER_UUID: ADMIN_ROLE}
+TITLE_GET_TEST = "Get_Project_Test"
+TITLE_EDIT_TEST = "Edit_Project_Test"
+EDITED_TITLE = "Edited_Project_Test"
+DELETED_STATUS = False
+NEW_TITLE_NEGATIVE = ""
+USER_UUID_NEGATIVE = "95bb52b4-fa9e-44bd-80b3-84a437b66df"
+TEST_USER_NEGATIVE = {USER_UUID_NEGATIVE: ADMIN_ROLE}
